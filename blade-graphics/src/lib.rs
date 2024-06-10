@@ -55,7 +55,7 @@ pub mod derive;
 #[cfg_attr(
     all(
         not(gles),
-        any(vulkan, windows, target_os = "linux", target_os = "android")
+        any(vulkan, windows, target_os = "linux", target_os = "freebsd", target_os = "android")
     ),
     path = "vulkan/mod.rs"
 )]
